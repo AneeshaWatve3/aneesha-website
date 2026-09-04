@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Aneesha Watve — product strategy, experience architecture, UX, information systems, and brand design." name="description"/>
+<title>Aneesha Watve — Product Strategy &amp; UX Portfolio</title>
+<style>
+    :root{--ink:#171918;--muted:#686d68;--paper:#f7f7f3;--card:#fff;--line:#dcded8;--green:#17685f;--green-soft:#e8f1ed;--lime:#c8ec42;--navy:#142d45;--red:#b64034;--amber:#d47c27;--shadow:0 1px 2px rgba(20,30,24,.05),0 10px 30px rgba(20,30,24,.06);--radius:14px;--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif} img{max-width:100%;display:block} a{color:inherit} button{font:inherit}
+    .skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:#fff;padding:12px 16px;z-index:100;border:2px solid var(--green)}
+    .nav{position:sticky;top:0;z-index:30;background:rgba(247,247,243,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,222,216,.8)}
+    .nav-inner{max-width:var(--max);margin:auto;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.mark{font-weight:800;text-decoration:none;letter-spacing:-.03em}.mark span{color:var(--green)}
+    .nav-links{display:flex;align-items:center;gap:26px}.nav-links a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:650}.nav-links a:hover,.nav-links a:focus{color:var(--ink)}.contact-pill{border:1px solid var(--ink);border-radius:999px;padding:8px 14px!important;color:var(--ink)!important}.menu{display:none;border:0;background:none;font-size:22px;min-width:44px;min-height:44px}
+    .shell{max-width:var(--max);margin:auto;padding:0 28px}.hero{min-height:690px;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:90px 0 72px}.eyebrow{font:700 12px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.16em;color:var(--green);margin-bottom:22px}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.065em;margin:0 0 28px;max-width:820px}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--green)}.hero p{font-size:20px;color:var(--muted);max-width:650px;margin:0 0 34px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;min-height:46px;align-items:center;justify-content:center;text-decoration:none;border-radius:8px;padding:10px 16px;font-weight:750;border:1px solid var(--ink)}.btn.primary{background:var(--ink);color:#fff}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-1px)}
+    .hero-panel{background:radial-gradient(circle at 110% -8%,var(--lime) 0 145px,transparent 146px),var(--navy);color:#fff;border-radius:24px;padding:34px;min-height:460px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-panel .label{position:relative;font:700 12px ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:#b8c8d6}.hero-panel blockquote{position:relative;margin:80px 0 40px;font:400 clamp(30px,3.5vw,46px)/1.18 Georgia,serif;letter-spacing:-.025em}.capabilities{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px}.capabilities span{border-top:1px solid rgba(255,255,255,.26);padding-top:10px;font-size:13px;color:#d9e1e7}
+    .section{padding:96px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:end;margin-bottom:44px}.section h2{font-size:clamp(36px,5vw,60px);letter-spacing:-.05em;line-height:1.04;margin:0}.section-head p{font-size:18px;color:var(--muted);max-width:680px;margin:0}
+    .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.project-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s ease}.project-card:first-child{grid-column:1/-1}.project-card:hover{transform:translateY(-3px);box-shadow:0 12px 38px rgba(20,30,24,.1)}.project-card a{text-decoration:none}.thumb{aspect-ratio:16/9;overflow:hidden;background:#e9ece8}.thumb img{width:100%;height:100%;object-fit:cover;transition:.4s ease}.project-card:hover img{transform:scale(1.015)}.card-copy{padding:26px}.meta{display:flex;justify-content:space-between;gap:18px;font:700 11px ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}.card-copy h3{font-size:30px;line-height:1.15;letter-spacing:-.035em;margin:14px 0 10px}.card-copy p{color:var(--muted);margin:0;max-width:760px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.tag{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:5px 9px;background:#fafaf8}
+    .project-detail{padding:104px 0;border-top:1px solid var(--line);scroll-margin-top:64px}.detail-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:58px;margin-bottom:44px}.number{font:700 13px ui-monospace,monospace;color:var(--green);letter-spacing:.14em}.detail-head h2{font-size:clamp(40px,5.5vw,70px);line-height:1.02;letter-spacing:-.055em;margin:8px 0 20px}.detail-lede{font:400 25px/1.45 Georgia,serif;color:#3e4540;margin:0;max-width:760px}.role-box{border-top:1px solid var(--ink);padding-top:18px;display:grid;gap:18px}.role-box div{display:grid;grid-template-columns:100px 1fr;gap:12px}.role-box dt{font:700 11px ui-monospace,monospace;text-transform:uppercase;color:var(--muted)}.role-box dd{margin:0;font-weight:650}.feature-image{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;margin:0 0 36px}.feature-image img{width:100%}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.content-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}.content-card.dark{background:var(--navy);color:#fff;border-color:var(--navy)}.content-card.accent{background:var(--green-soft);border-color:#cddfd7}.content-card h3{font-size:22px;letter-spacing:-.025em;margin:0 0 14px}.content-card p,.content-card li{color:var(--muted)}.content-card.dark p,.content-card.dark li{color:#dbe3e8}.content-card ul{padding-left:20px;margin:0}.content-card.wide{grid-column:1/-1}.image-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.image-pair figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.image-pair figcaption{padding:12px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+    .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.principle{padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}.principle b{display:block;font-size:18px;margin-bottom:8px}.principle span{color:var(--muted);font-size:14px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}.about-note{font:400 31px/1.4 Georgia,serif;color:#303632;margin:0}.about-copy p{color:var(--muted);font-size:18px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}.skill-list div{border-top:1px solid var(--line);padding:12px 0;font-weight:700}
+    .contact{background:var(--ink);color:#fff;border-radius:24px;padding:64px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end}.contact h2{font-size:clamp(42px,6vw,72px);line-height:1;letter-spacing:-.055em;margin:0 0 20px}.contact p{color:#c9ccc9;max-width:630px;font-size:18px}.contact .btn{background:#fff;color:var(--ink);border-color:#fff}.contact aside{font:13px ui-monospace,monospace;color:#adb3ae}
+    footer{padding:28px 0 46px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:62px}.hero-panel{min-height:380px}.section-head,.detail-head,.about-grid,.contact{grid-template-columns:1fr}.project-grid,.content-grid,.image-pair{grid-template-columns:1fr}.project-card:first-child,.content-card.wide{grid-column:auto}.principles{grid-template-columns:1fr 1fr}.role-box{margin-top:8px}.nav-links{display:none;position:absolute;left:16px;right:16px;top:66px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.menu{display:block}.contact{padding:38px}.section,.project-detail{padding:72px 0}}
+    @media(max-width:520px){.shell{padding:0 20px}.nav-inner{padding:11px 20px}.hero h1{font-size:50px}.hero p{font-size:18px}.hero-panel{padding:26px}.capabilities,.principles,.skill-list{grid-template-columns:1fr}.section-head{gap:20px}.detail-head{gap:28px}.content-card{padding:22px}.contact{padding:28px;border-radius:16px}.actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.project-card,.thumb img,.btn{transition:none}}
+    :focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  
+
+/* Refined editorial scale */
+body{font-size:16px;line-height:1.68;color:#252827;background:#f8f7f4}
+.nav{background:rgba(248,247,244,.94)}
+.mark{font-weight:650;letter-spacing:-.02em}
+.nav-links a{font-weight:520}
+.hero{min-height:620px;gap:64px;padding:76px 0 66px}
+.hero h1{font-size:clamp(42px,5.7vw,72px);line-height:1.02;letter-spacing:-.048em;font-weight:570;margin-bottom:24px}
+.hero p{font-size:18px;line-height:1.65;max-width:610px}
+.eyebrow{font-weight:600;letter-spacing:.14em}
+.btn{font-weight:600;border-radius:7px}
+.hero-panel{min-height:410px;border-radius:18px;padding:34px;background:radial-gradient(circle at 110% -8%,#d8ee77 0 125px,transparent 126px),#183149}
+.hero-panel .label{font-weight:600}
+.hero-panel blockquote{font-size:clamp(28px,3vw,40px);line-height:1.24;margin:65px 0 34px}
+.section{padding:80px 0}
+.section h2{font-size:clamp(32px,4.2vw,50px);font-weight:590;letter-spacing:-.038em}
+.section-head p{font-size:17px}
+.project-grid{gap:26px}
+.project-card{border-radius:10px;box-shadow:0 1px 2px rgba(20,30,24,.03),0 7px 24px rgba(20,30,24,.045)}
+.project-card:first-child .thumb{aspect-ratio:2.05/1}
+.thumb{aspect-ratio:16/10}
+.card-copy{padding:24px 25px 26px}
+.meta{font-weight:600}
+.card-copy h3{font-size:25px;font-weight:590;line-height:1.25;letter-spacing:-.025em;margin:12px 0 9px}
+.project-detail{padding:88px 0}
+.detail-head{margin-bottom:38px;gap:62px}
+.detail-head h2{font-size:clamp(36px,4.7vw,58px);font-weight:580;line-height:1.06;letter-spacing:-.042em}
+.detail-lede{font-size:21px;line-height:1.52}
+.role-box dd{font-weight:540}
+.content-card{padding:26px;border-radius:9px}
+.content-card h3{font-size:20px;font-weight:600;letter-spacing:-.015em}
+.content-card.dark{background:#183149}
+.image-pair{align-items:start;gap:26px}
+.image-pair figure{align-self:start;border-radius:9px}
+.image-pair img{width:100%;height:auto}
+.feature-image{border-radius:9px}
+.feature-image.strategy-visual{max-width:1000px;margin-left:auto;margin-right:auto;background:#fbfaf7;border-color:#e4e0da}
+.feature-image.compact-visual,.compact-visual{max-width:820px;margin-left:auto!important;margin-right:auto!important}
+.compact-visual img{width:100%;height:auto;max-height:720px;object-fit:contain;background:#fbfaf7}
+.visual-stack{display:grid;gap:32px;margin-top:28px}
+.visual-stack figure{margin-top:0!important;margin-bottom:0!important;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.visual-stack figcaption,.feature-image figcaption{padding:12px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.icon-library{max-width:720px!important}
+.principle b,.skill-list div{font-weight:590}
+.about-note{font-size:27px;line-height:1.48}
+.contact{padding:52px;border-radius:18px}
+.contact h2{font-size:clamp(36px,5vw,58px);font-weight:570;line-height:1.05;letter-spacing:-.043em}
+@media(max-width:850px){.hero{gap:40px}.section,.project-detail{padding:64px 0}.feature-image.strategy-visual,.compact-visual{max-width:100%}.contact{padding:36px}}
+@media(max-width:520px){.hero h1{font-size:43px}.hero-panel{min-height:340px}.hero-panel blockquote{font-size:28px;margin:48px 0 28px}.card-copy h3{font-size:23px}.detail-head h2{font-size:38px}.detail-lede{font-size:19px}.contact{padding:27px}}
+
+
+.case-module{margin:58px 0}
+.module-heading{max-width:760px;margin:0 0 26px}
+.module-heading.compact-heading{margin-top:48px}
+.module-kicker{font:600 11px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em;color:var(--green);margin-bottom:10px}
+.module-heading h3{font:500 clamp(28px,3.5vw,42px)/1.12 Georgia,serif;letter-spacing:-.025em;margin:0 0 12px}
+.module-heading p{color:var(--muted);font-size:16px;margin:0}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.research-card{border-top:2px solid #292b2a;background:#efefec;padding:22px;min-height:170px}
+.research-card span{font:600 11px ui-monospace,monospace;color:var(--green)}
+.research-card h4{font-size:18px;font-weight:600;margin:22px 0 8px}
+.research-card p{font-size:14px;color:var(--muted);margin:0}
+.journey-track,.product-flow{display:grid;grid-template-columns:repeat(6,1fr);border-top:2px solid #d67b5e;padding-top:0}
+.journey-track>div,.product-flow>div{position:relative;padding:24px 18px 18px;border-right:1px solid var(--line);min-height:150px}
+.journey-track>div:last-child,.product-flow>div:last-child{border-right:0}
+.journey-track>div:before,.product-flow>div:before{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background:#f8f7f4;border:2px solid #d67b5e;top:-7px;left:18px}
+.journey-track b,.product-flow b{display:block;font:600 11px ui-monospace,monospace;color:#a25d48;margin-bottom:18px}
+.journey-track strong,.product-flow strong{display:block;font-size:16px;font-weight:600;margin-bottom:7px}
+.journey-track span,.product-flow span{display:block;font-size:13px;line-height:1.45;color:var(--muted)}
+.journey-insight{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.journey-insight span{font:600 11px ui-monospace,monospace;letter-spacing:.12em;color:var(--green);text-transform:uppercase}
+.journey-insight p{font:400 18px/1.5 Georgia,serif;margin:0;color:#3b403d}
+.persona-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.persona-card{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:9px;padding:20px}
+.persona-card img{width:150px;height:150px;object-fit:cover;border-radius:7px;filter:saturate(.86)}
+.persona-card span{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:var(--green)}
+.persona-card h4{font-size:19px;font-weight:590;line-height:1.3;margin:8px 0 12px}
+.persona-card p{font-size:14px;color:var(--muted);margin:7px 0}
+.persona-card p b{color:#3b403d;font-weight:600}
+.product-flow{grid-template-columns:repeat(5,1fr);border-color:#91a978}
+.product-flow>div:before{border-color:#91a978}
+.product-flow b{color:#627b54}
+.green-flow{margin-top:38px;margin-bottom:48px}
+#green-app-detail{max-width:900px;margin-top:26px;margin-bottom:36px}
+@media(max-width:850px){.research-grid,.persona-grid{grid-template-columns:1fr}.journey-track,.product-flow{grid-template-columns:repeat(3,1fr);border-top:0}.journey-track>div,.product-flow>div{border-top:2px solid #d67b5e}.persona-card{grid-template-columns:120px 1fr}.persona-card img{width:120px;height:120px}}
+@media(max-width:520px){.journey-track,.product-flow{grid-template-columns:1fr}.journey-track>div,.product-flow>div{min-height:auto;padding:22px 12px}.journey-insight{grid-template-columns:1fr;gap:8px}.persona-card{grid-template-columns:82px 1fr;padding:15px;gap:14px}.persona-card img{width:82px;height:96px}.persona-card h4{font-size:17px}.module-heading h3{font-size:29px}}
+
+
+.journey-matrix{margin-top:20px;border-top:1px solid #cfcac3;border-bottom:1px solid #cfcac3}
+.journey-row{display:grid;grid-template-columns:.55fr 1fr 1.15fr 1.25fr;gap:22px;padding:17px 8px;border-top:1px solid var(--line);align-items:start}
+.journey-row:first-child{border-top:0}
+.journey-row strong{font-size:14px;font-weight:600;color:#303432}
+.journey-row p{font-size:14px;line-height:1.5;color:var(--muted);margin:0}
+.journey-row p:first-of-type{font-family:Georgia,serif;font-size:15px;color:#3f4541}
+.journey-labels{padding-top:11px;padding-bottom:11px}
+.journey-labels span{font:600 10px ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase;color:var(--green)}
+.dashboard-visual{max-width:880px!important;margin-left:auto!important;margin-right:auto!important}
+.dashboard-visual img{width:100%;height:auto}
+@media(max-width:850px){.dashboard-visual{max-width:100%!important}.journey-row{grid-template-columns:1fr 1fr}.journey-labels{display:none}}
+@media(max-width:520px){.journey-row{grid-template-columns:1fr;gap:7px;padding:17px 4px}.journey-row strong{margin-bottom:4px}}
+
+
+.compact-merch{max-width:720px!important;margin-left:auto!important;margin-right:auto!important}
+.image-pair.single-visual{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
+.gp-system{margin-top:52px}
+.gp-friction{background:#0b2814;color:#f1f3e9;border-radius:10px;padding:10px 34px 14px}
+.gp-friction-head,.gp-friction>div:not(.gp-friction-head){display:grid;grid-template-columns:1.05fr 1.2fr .85fr;gap:30px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(151,190,126,.22)}
+.gp-friction>div:last-child{border-bottom:0}
+.gp-friction-head span{font:600 10px ui-monospace,monospace;letter-spacing:.13em;color:#91ad80;text-transform:uppercase}
+.gp-friction strong{font-size:15px;font-weight:580;color:#e7ecd9}
+.gp-friction p{font-size:14px;color:#8ca084;margin:0;line-height:1.5}
+.gp-friction b{font-size:14px;font-weight:560;color:#c7e74a}
+.gp-system-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:14px;align-items:center}
+.gp-system-flow>div{min-height:145px;border:1px solid #cbd5c6;border-radius:8px;padding:19px;background:#fbfcf8}
+.gp-system-flow>i{font:400 24px Georgia,serif;color:#7e9672}
+.gp-system-flow span{font:600 10px ui-monospace,monospace;color:#668058}
+.gp-system-flow strong{display:block;font-size:17px;font-weight:600;margin:16px 0 7px}
+.gp-system-flow p{font-size:13px;line-height:1.45;color:var(--muted);margin:0}
+.gp-layer-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #a9b6a3;border-left:1px solid #a9b6a3}
+.gp-layer-grid article{padding:24px 20px;min-height:190px;border-right:1px solid #a9b6a3;border-bottom:1px solid #a9b6a3}
+.gp-layer-grid span{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:#627c54}
+.gp-layer-grid h4{font-size:17px;font-weight:590;line-height:1.35;margin:22px 0 9px}
+.gp-layer-grid p{font-size:13px;color:var(--muted);margin:0}
+.evidence-note{display:grid;grid-template-columns:170px 1fr;gap:24px;margin-top:24px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.evidence-note span{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:#627c54}
+.evidence-note p{font-size:14px;color:var(--muted);margin:0}
+@media(max-width:850px){.gp-friction-head{display:none}.gp-friction>div:not(.gp-friction-head){grid-template-columns:1fr;gap:8px}.gp-system-flow{grid-template-columns:1fr}.gp-system-flow>i{transform:rotate(90deg);justify-self:center}.gp-layer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.compact-merch{max-width:100%!important}.gp-friction{padding:8px 20px}.gp-layer-grid{grid-template-columns:1fr}.evidence-note{grid-template-columns:1fr;gap:8px}}
+
+
+.gp-app-experience{margin-top:48px;margin-bottom:58px}
+.gp-app-main{display:grid;gap:26px;max-width:1020px;margin:0 auto}
+.gp-app-main figure,.gp-theme-pair figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.gp-app-main img,.gp-theme-pair img{width:100%;height:auto;display:block}
+.gp-app-main figcaption,.gp-theme-pair figcaption{padding:12px 16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.gp-app-main figcaption b{font-weight:600;color:#343936}
+.gp-theme-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:980px;margin:0 auto}
+.concept-disclaimer{max-width:980px;margin:16px auto 0;font-size:12px;color:var(--muted)}
+@media(max-width:850px){.gp-theme-pair{grid-template-columns:1fr}.gp-app-main,.gp-theme-pair{max-width:100%}}
+
+
+.about-profile{display:grid;grid-template-columns:.68fr 1.32fr;gap:70px;align-items:center}
+.about-portrait{max-width:380px}
+.about-portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:10px;filter:saturate(.9)}
+.about-story h2{font-size:clamp(34px,4.2vw,50px);font-weight:580;letter-spacing:-.038em;margin:0 0 22px}
+.about-story>p{font-size:17px;color:var(--muted);max-width:720px}
+.about-story .about-lede{font:400 24px/1.48 Georgia,serif;color:#343a36;margin-top:0}
+.about-specializations{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin-top:30px}
+.about-specializations span{padding:12px 0;border-top:1px solid var(--line);font-size:14px;font-weight:560}
+.education-block{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;margin-top:82px;padding-top:48px;border-top:1px solid var(--line)}
+.education-title h3{font:400 29px/1.3 Georgia,serif;letter-spacing:-.02em;margin:0;max-width:360px}
+.education-list{border-top:1px solid #9fa39f}
+.education-list article{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid var(--line)}
+.education-list time{font:600 12px ui-monospace,monospace;color:var(--green)}
+.education-list h4{font-size:18px;font-weight:600;margin:0 0 6px}
+.education-list p{font-size:14px;color:var(--muted);margin:5px 0;line-height:1.55}
+.education-list p b{font-weight:590;color:#343936}
+@media(max-width:850px){.about-profile,.education-block{grid-template-columns:1fr;gap:34px}.about-portrait{max-width:300px}.education-block{margin-top:58px}.education-title h3{max-width:600px}}
+@media(max-width:520px){.about-portrait{max-width:230px}.about-story .about-lede{font-size:21px}.about-specializations{grid-template-columns:1fr}.education-list article{grid-template-columns:55px 1fr;gap:15px}}
+
+
+.writing-callout{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end;padding:44px 0}
+.writing-callout h2{font:400 clamp(32px,4.2vw,50px)/1.12 Georgia,serif;letter-spacing:-.03em;margin:0 0 14px;max-width:760px}
+.writing-callout p{font-size:17px;color:var(--muted);max-width:660px;margin:0}
+.writing-callout .btn{white-space:nowrap}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+footer a:hover,footer a:focus{color:var(--ink)}
+@media(max-width:850px){.writing-callout{grid-template-columns:1fr;align-items:start;gap:24px;padding:20px 0}.writing-callout .btn{justify-self:start}}
+
+
+#writing{padding-top:118px;padding-bottom:118px}
+.blog-header{display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px;margin-bottom:42px}
+.blog-header h2{font:400 clamp(36px,4.8vw,58px)/1.08 Georgia,serif;letter-spacing:-.035em;margin:0 0 15px}
+.blog-header p{font-size:17px;color:var(--muted);max-width:690px;margin:0}
+.text-link{color:var(--ink);text-decoration:none;padding-bottom:5px;border-bottom:1px solid var(--ink);font-size:14px;white-space:nowrap}
+.blog-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.blog-card{min-height:310px;padding:32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;background:rgba(255,255,255,.28)}
+.blog-meta{display:flex;justify-content:space-between;gap:15px;font:500 11px/1.3 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--green)}
+.blog-card h3{font:400 26px/1.22 Georgia,serif;letter-spacing:-.02em;margin:29px 0 15px;max-width:520px}
+.blog-card p{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 25px;max-width:540px}
+.blog-card>a{margin-top:auto;color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;align-self:flex-start;border-bottom:1px solid var(--line);padding-bottom:4px}
+.blog-card>a:hover,.blog-card>a:focus,.text-link:hover,.text-link:focus{color:var(--green);border-color:var(--green)}
+@media(max-width:850px){#writing{padding-top:84px;padding-bottom:84px}.blog-header{grid-template-columns:1fr;align-items:start;gap:22px}.blog-header .text-link{justify-self:start}.blog-grid{grid-template-columns:1fr}.blog-card{min-height:0;padding:27px}.blog-card h3{font-size:23px;margin-top:23px}}
+
+
+.blog-count{font:500 11px/1.3 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.native-blog-reader{display:none;position:fixed;inset:0;z-index:200;background:#f7f5ef;color:var(--ink);overflow-y:auto}
+.native-blog-reader.is-open{display:block}
+body.blog-reading{overflow:hidden}
+body.blog-reading > nav.nav,body.blog-reading > main,body.blog-reading > footer{display:none!important}
+.native-blog-nav{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);background:rgba(247,245,239,.94);backdrop-filter:blur(14px)}
+.native-blog-brand,.native-blog-back{color:var(--ink);text-decoration:none;font-size:13px}
+.native-blog-brand{font-weight:650;letter-spacing:-.01em}.native-blog-back{color:var(--muted)}
+.native-blog-stage{max-width:920px;margin:0 auto;padding:90px 34px 110px}
+.native-blog-page{display:none}.native-blog-page.is-active{display:block}
+.native-blog-hero{padding-bottom:52px;border-bottom:1px solid var(--line)}
+.native-blog-hero .blog-meta{max-width:760px}
+.native-blog-hero h1{font:400 clamp(43px,7vw,78px)/1.01 Georgia,serif;letter-spacing:-.048em;margin:38px 0 24px;max-width:900px}
+.native-blog-dek{font:400 clamp(20px,2.8vw,27px)/1.5 Georgia,serif;color:#4d554f;max-width:760px;margin:0}
+.native-blog-byline{font-size:12px;color:var(--muted);margin:30px 0 0}
+.native-blog-body{max-width:720px;margin:70px auto 0}
+.native-blog-body h2{font:400 34px/1.2 Georgia,serif;letter-spacing:-.025em;margin:64px 0 22px}
+.native-blog-body p{font:400 18px/1.82 Arial,sans-serif;color:#343936;margin:0 0 24px}
+.native-blog-end{display:flex;justify-content:space-between;gap:25px;align-items:center;max-width:720px;margin:80px auto 0;padding-top:28px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.native-blog-end a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px}
+@media(max-width:650px){.native-blog-stage{padding:58px 22px 80px}.native-blog-nav{padding:15px 20px}.native-blog-hero{padding-bottom:38px}.native-blog-hero h1{font-size:42px;margin-top:28px}.native-blog-dek{font-size:20px}.native-blog-body{margin-top:46px}.native-blog-body h2{font-size:28px;margin-top:48px}.native-blog-body p{font-size:17px;line-height:1.75}.native-blog-end{align-items:flex-start;flex-direction:column}}
+
+
+.case-live-link{display:inline-block;margin-top:18px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px;font-size:13px;font-weight:600}
+.case-live-link:hover,.case-live-link:focus{color:var(--green);border-color:var(--green)}
+.cor3-evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin-top:34px}
+.evidence-column{display:grid;gap:28px;align-content:start}
+.cor3-evidence-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.cor3-evidence-grid img{width:100%;height:auto;display:block}
+.cor3-evidence-grid figcaption{padding:13px 16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.contextual-visual img{background:#fff;object-fit:contain}
+.blog-concept-visual{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px;margin:24px 0 2px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.blog-concept-visual span{font:550 10px/1.25 ui-monospace,monospace;letter-spacing:.045em;text-transform:uppercase;color:#4b554e;text-align:center}
+.blog-concept-visual i{font-style:normal;color:var(--green);font-size:14px}
+.blog-concept-visual.article-visual{max-width:720px;margin:36px 0 0;padding:20px 0}
+.blog-concept-visual.article-visual span{font-size:12px}
+@media(max-width:850px){.cor3-evidence-grid{grid-template-columns:1fr}.blog-concept-visual.article-visual{max-width:100%}}
+@media(max-width:460px){.blog-concept-visual{gap:5px}.blog-concept-visual span{font-size:8px}.blog-concept-visual.article-visual span{font-size:9px}}
+
+
+.visual-archive{background:#f1eee5;padding-top:128px;padding-bottom:128px}
+.archive-header{display:grid;grid-template-columns:1.25fr .75fr;gap:72px;align-items:end;padding-bottom:44px;border-bottom:1px solid #ccc7b9}
+.archive-header h2{font:400 clamp(52px,7vw,86px)/.98 Georgia,serif;letter-spacing:-.05em;margin:8px 0 20px}
+.archive-lede{font:400 clamp(20px,2.1vw,26px)/1.5 Georgia,serif;color:#4b504b;max-width:760px;margin:0}
+.archive-meta{margin:0;border-top:1px solid #a9a596}
+.archive-meta>div{display:grid;grid-template-columns:75px 1fr;gap:15px;padding:13px 0;border-bottom:1px solid #d2cec1}
+.archive-meta dt{font:550 10px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.archive-meta dd{margin:0;font-size:13px;color:#343936}
+.archive-story{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;padding:65px 0}
+.archive-story h3,.series-copy h3{font:400 clamp(30px,3.7vw,46px)/1.18 Georgia,serif;letter-spacing:-.03em;margin:9px 0 0}
+.archive-story>p,.series-copy p{font-size:16px;line-height:1.75;color:var(--muted);margin:0;max-width:680px}
+.bee-identity-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:900px;margin:0 auto 95px}
+.bee-identity-grid figure,.bee-ad-grid figure{margin:0;background:#fff;border:1px solid #d7d2c5;border-radius:8px;overflow:hidden}
+.bee-identity-grid img{width:100%;height:520px;object-fit:contain;background:#fff;display:block}
+.bee-identity-grid figcaption,.bee-ad-grid figcaption{padding:13px 15px;border-top:1px solid #ddd8ca;font-size:12px;line-height:1.55;color:var(--muted)}
+.bee-identity-grid figcaption b{color:#343936;font-weight:600}
+.archive-series{padding:68px 0;border-top:1px solid #ccc7b9}
+.series-copy{display:grid;grid-template-columns:.72fr 1.28fr;gap:40px 70px;align-items:start;margin-bottom:38px}
+.series-copy .module-kicker{grid-column:1}.series-copy h3{grid-column:1}.series-copy p{grid-column:2;grid-row:1 / span 2;padding-top:3px}
+.bee-ad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.bee-ad-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.source-series .bee-ad-grid img{aspect-ratio:1/1.04}
+@media(max-width:850px){.visual-archive{padding-top:88px;padding-bottom:88px}.archive-header,.archive-story,.series-copy{grid-template-columns:1fr;gap:30px}.series-copy .module-kicker,.series-copy h3,.series-copy p{grid-column:1;grid-row:auto}.bee-identity-grid{margin-bottom:60px}.bee-identity-grid img{height:400px}}
+@media(max-width:620px){.bee-identity-grid{grid-template-columns:1fr;max-width:340px}.bee-ad-grid{grid-template-columns:1fr;max-width:390px;margin:0 auto}.bee-identity-grid img{height:auto}.archive-series{padding:52px 0}}
+
+
+.archive-project{margin-top:120px;padding-top:120px;border-top:1px solid #bdb8aa}
+.photowiz-principles{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #c8c3b6;border-left:1px solid #c8c3b6;margin-bottom:55px}
+.photowiz-principles>div{padding:26px;border-right:1px solid #c8c3b6;border-bottom:1px solid #c8c3b6;background:rgba(255,255,255,.22)}
+.photowiz-principles span{font:600 10px ui-monospace,monospace;color:#b8202a;letter-spacing:.08em}
+.photowiz-principles h4{font-size:16px;font-weight:600;margin:28px 0 10px}
+.photowiz-principles p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+.photowiz-figure{margin:0 auto 28px;max-width:1120px;background:#fff;border:1px solid #d4d0c5;border-radius:8px;overflow:hidden}
+.photowiz-figure img{display:block;width:100%;height:auto}
+.photowiz-figure figcaption{padding:14px 17px;border-top:1px solid #ddd8ca;font-size:12px;line-height:1.55;color:var(--muted)}
+.photowiz-figure figcaption b{font-weight:600;color:#343936}
+@media(max-width:850px){.archive-project{margin-top:85px;padding-top:85px}.photowiz-principles{grid-template-columns:1fr}.photowiz-principles>div{padding:23px}.photowiz-principles h4{margin-top:18px}}
+
+
+.fru2go-process{display:grid;grid-template-columns:1fr auto 1.35fr auto 1fr auto 1fr auto 1.2fr;gap:12px;align-items:center;padding:18px 0 70px}
+.fru2go-process>div{min-height:88px;padding:16px;border:1px solid #c9c4b7;border-radius:6px;background:rgba(255,255,255,.28);display:flex;flex-direction:column;justify-content:space-between}
+.fru2go-process span,.fru2go-pillars span{font:600 10px ui-monospace,monospace;color:#4f8a35;letter-spacing:.08em}
+.fru2go-process b{font-size:12px;line-height:1.35;font-weight:600}
+.fru2go-process i{font-style:normal;color:#8e8a7e;font-size:15px}
+.fru2go-solution{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;padding:65px 0;border-top:1px solid #ccc7b9}
+.fru2go-solution h3,.fru2go-mascot-story h3{font:400 clamp(30px,3.7vw,46px)/1.18 Georgia,serif;letter-spacing:-.03em;margin:9px 0 0}
+.fru2go-pillars{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #c8c3b6;border-left:1px solid #c8c3b6}
+.fru2go-pillars>div{padding:22px;border-right:1px solid #c8c3b6;border-bottom:1px solid #c8c3b6;background:rgba(255,255,255,.22)}
+.fru2go-pillars h4{font-size:15px;margin:24px 0 9px}.fru2go-pillars p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.fru2go-figure{margin:0;background:#fff;border:1px solid #d4d0c5;border-radius:8px;overflow:hidden}
+.fru2go-figure img{display:block;width:100%;height:auto}.fru2go-figure figcaption{padding:14px 17px;border-top:1px solid #ddd8ca;font-size:12px;line-height:1.55;color:var(--muted)}
+.fru2go-figure figcaption b{font-weight:600;color:#343936}
+.fru2go-mascot-story{display:grid;grid-template-columns:.62fr 1.38fr;gap:65px;align-items:start;padding-top:72px}
+.fru2go-mascot-story>div>p{font-size:15px;line-height:1.75;color:var(--muted);margin-top:22px}
+@media(max-width:900px){.fru2go-process{grid-template-columns:1fr}.fru2go-process i{transform:rotate(90deg);justify-self:center}.fru2go-solution,.fru2go-mascot-story{grid-template-columns:1fr;gap:35px}.fru2go-pillars{grid-template-columns:1fr}}
+
+
+.me-research{padding:58px 0 70px;border-top:1px solid #ccc7b9}
+.me-research-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px;border-top:1px solid #c8c3b6;border-left:1px solid #c8c3b6}
+.me-research-grid>div{padding:25px;border-right:1px solid #c8c3b6;border-bottom:1px solid #c8c3b6;background:rgba(255,255,255,.24)}
+.me-research-grid span,.me-strategy li>span{font:600 10px ui-monospace,monospace;color:#d06018;letter-spacing:.08em}
+.me-research-grid h4{font-size:16px;margin:28px 0 10px}.me-research-grid p,.me-strategy p,.me-product-copy p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+.me-strategy{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;padding:65px 0;border-top:1px solid #ccc7b9}
+.me-strategy h3,.me-product h3{font:400 clamp(30px,3.7vw,46px)/1.18 Georgia,serif;letter-spacing:-.03em;margin:9px 0 0}
+.me-strategy ol{list-style:none;margin:0;padding:0;border-top:1px solid #c8c3b6}
+.me-strategy li{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid #c8c3b6}
+.me-strategy li b{font-size:14px;font-weight:600}.me-strategy li p{margin-top:6px}
+.me-product{display:grid;grid-template-columns:.58fr 1.42fr;gap:55px;align-items:center;padding:72px 0;border-top:1px solid #ccc7b9}
+.me-product.reverse{grid-template-columns:1.35fr .65fr}.me-product.reverse .me-product-copy{order:2}.me-product.reverse figure{order:1}
+.me-product-copy{position:relative}.me-number{display:block;font:500 11px ui-monospace,monospace;color:#8c877c;margin-bottom:32px}.me-product-copy>p{font-size:15px;line-height:1.75;margin-top:20px}.me-product figure{margin:0;background:#fff;border:1px solid #d4d0c5;border-radius:8px;overflow:hidden}.me-product img{display:block;width:100%;height:auto}.me-product figcaption{padding:14px 17px;border-top:1px solid #ddd8ca;font-size:12px;line-height:1.55;color:var(--muted)}.me-product figcaption b{font-weight:600;color:#343936}
+.me-loop{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:25px}.me-loop span{font:600 10px ui-monospace,monospace;letter-spacing:.04em;padding:7px 9px;border:1px solid #c9c4b7;border-radius:20px}.me-loop i{font-style:normal;color:#999388}.me-logo-note{padding-top:18px!important;border-top:1px solid #d1ccbf}.me-logo-note b{color:#343936;font-weight:600}
+@media(max-width:900px){.me-research-grid,.me-strategy,.me-product,.me-product.reverse{grid-template-columns:1fr}.me-strategy,.me-product{gap:34px}.me-product.reverse .me-product-copy,.me-product.reverse figure{order:initial}}
+@media(max-width:620px){.me-research-grid{grid-template-columns:1fr}.me-product{padding:55px 0}.me-loop i{display:none}}
+
+
+
+/* Homepage entry to the separate branding and visual design page */
+.brand-visual-entry{margin-top:34px;padding:38px 42px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(120deg,#f5f2ea 0%,#eef2ef 100%);display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center}
+.brand-visual-entry .eyebrow{margin-bottom:10px}.brand-visual-entry h3{font:400 clamp(28px,3vw,40px)/1.12 Georgia,serif;letter-spacing:-.035em;margin:0 0 10px}.brand-visual-entry p{max-width:720px;margin:0;color:var(--muted);line-height:1.65}.brand-visual-entry .btn{white-space:nowrap;justify-self:end}
+@media(max-width:760px){.brand-visual-entry{grid-template-columns:1fr;padding:30px 25px}.brand-visual-entry .btn{justify-self:start}}
+
+/* Dedicated Branding & Visual Design route */
+#archive{display:none}
+body.visual-projects-open #archive{display:block}
+body.visual-projects-open main>section:not(#archive),body.visual-projects-open footer{display:none!important}
+body.visual-projects-open #native-blog-reader{display:none!important}
+.archive-page-intro{padding-bottom:84px}
+.archive-page-bar{display:flex;justify-content:space-between;gap:30px;align-items:center;padding:22px 0;border-bottom:1px solid #cbc6b8;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.archive-page-bar a{color:#343936;text-decoration:none;font-weight:600}
+.archive-page-heading{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;padding:82px 0 55px}
+.archive-page-heading h1{font:400 clamp(56px,8vw,100px)/.95 Georgia,serif;letter-spacing:-.055em;margin:10px 0 0}
+.archive-page-heading p{font:400 20px/1.55 Georgia,serif;color:#555a55;margin:0;max-width:610px}
+.archive-project-index{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c8c3b6;border-left:1px solid #c8c3b6}
+.archive-project-index a{padding:18px;border-right:1px solid #c8c3b6;border-bottom:1px solid #c8c3b6;color:#343936;text-decoration:none;font:600 11px/1.4 ui-monospace,monospace;letter-spacing:.03em;background:rgba(255,255,255,.22)}
+.archive-project-index a:hover,.archive-project-index a:focus-visible{background:#fff}
+.tp-project-map-visual figcaption b{font-weight:600;color:#343936}
+@media(max-width:850px){.archive-page-heading{grid-template-columns:1fr;gap:28px;padding:62px 0 45px}.archive-project-index{grid-template-columns:1fr 1fr}.archive-page-bar span{display:none}}
+@media(max-width:520px){.archive-page-intro{padding-bottom:58px}.archive-project-index{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Primary navigation" class="nav"><div class="nav-inner"><a class="mark" href="#top">Aneesha<span>.</span></a><button aria-controls="navlinks" aria-expanded="false" aria-label="Open menu" class="menu">Menu</button><div class="nav-links" id="navlinks"><a href="#about">About</a><a href="#research-design-strategy">Research &amp; Design Strategy</a><a href="#branding-visual-design">Branding &amp; Visual Design</a><a href="#writing">Blog</a><a class="contact-pill" href="mailto:aneeshawatve3@gmail.com">Contact</a></div></div></nav>
+<main id="main">
+<header class="shell hero" id="top">
+<div class="reveal"><div class="eyebrow">Product strategy · Experience architecture · Design systems</div><h1>I turn complexity into <em>product direction.</em></h1><p>I’m Aneesha Watve. I frame product opportunities, structure complex systems, and translate strategy into clear experiences that teams can build and people can understand.</p><div class="actions"><a class="btn primary" href="#research-design-strategy">View Research &amp; Design Strategy</a><a class="btn secondary" href="mailto:aneeshawatve3@gmail.com">Start a conversation</a></div></div>
+<aside aria-label="Design philosophy" class="hero-panel reveal"><div class="label">Design philosophy</div><blockquote>Clarity is not simplification. It is making the underlying system legible.</blockquote><div class="capabilities"><span>Product strategy</span><span>UX &amp; interaction</span><span>Information architecture</span><span>Brand systems</span></div></aside>
+</header>
+<section class="section shell" id="research-design-strategy"><div class="section-head reveal"><h2>Research &amp; Design Strategy</h2><p>Three case studies show how I connect research framing, product strategy, information architecture, and experience design.</p></div>
+<div class="project-grid">
+<article class="project-card reveal"><a href="#cor3"><div class="thumb"><img alt="Colorful street in Old San Juan, Puerto Rico" src="assets/home-cor3.webp"/></div><div class="card-copy"><div class="meta"><span>01 · Civic technology</span><span>UX audit &amp; concept</span></div><h3>The public’s window into recovery progress</h3><p>A responsive transparency platform bringing together financial data, project progress, education, procurement visibility, and public accountability.</p><div class="tags"><span class="tag">Human-centered design</span><span class="tag">Data visualization</span><span class="tag">Responsive UX</span><span class="tag">CMS</span></div></div></a></article>
+<article class="project-card reveal"><a href="#prdrs"><div class="thumb"><img alt="Aerial view of Puerto Rico homes during disaster recovery" src="assets/home-prdrs.webp"/></div><div class="card-copy"><div class="meta"><span>02 · Enterprise platform</span><span>Product UX</span></div><h3>A command center for recovery operations</h3><p>A connected dashboard, mega menu, assistant, and visual system designed to help power users act without losing context.</p><div class="tags"><span class="tag">Dashboard</span><span class="tag">Navigation</span><span class="tag">Conversational UX</span></div></div></a></article>
+<article class="project-card reveal"><a href="#green"><div class="thumb"><img alt="Fresh salad with tomatoes, cucumber, greens, and red onion" src="assets/home-green.jpg"/></div><div class="card-copy"><div class="meta"><span>03 · Consumer product</span><span>Brand &amp; app concept</span></div><h3>Making healthy choices easier to sustain</h3><p>An end-to-end concept connecting positioning, brand identity, mobile product design, and campaign execution.</p><div class="tags"><span class="tag">Concept</span><span class="tag">Strategy</span><span class="tag">Branding</span><span class="tag">Mobile UX</span></div></div></a></article>
+</div>
+<aside class="brand-visual-entry reveal" aria-label="Branding and visual design portfolio">
+<div><div class="eyebrow">Branding &amp; Visual Design</div><h3>Strategy expressed through identity, packaging, and campaigns.</h3><p>Explore a separate collection of brand systems and visual communication work—including Bee Organic, Photowiz, Fru2go, and ME Toys.</p></div>
+<a class="btn secondary" href="#branding-visual-design">View Branding &amp; Visual Design</a>
+</aside>
+</section>
+<article class="project-detail shell" id="cor3">
+<div class="detail-head reveal">
+<div><div class="number">CASE 01</div><dl class="role-box">
+<div><dt>Focus</dt><dd>Public recovery transparency</dd></div>
+<div><dt>Work</dt><dd>Product strategy, website rebrand, data UX, content system</dd></div>
+<div><dt>Context</dt><dd>Implemented public portal</dd></div>
+</dl></div>
+<div><h2>COR3 Transparency Portal</h2><p class="detail-lede">A rebranded public window into Puerto Rico’s recovery—combining complex financial data, project progress, educational content, procurement visibility, and accountability in one responsive experience.</p><a class="case-live-link" href="https://www.recovery.pr.gov" rel="noopener noreferrer" target="_blank">Visit the Transparency Portal ↗</a></div>
+</div>
+<section id="cor3-process" style="margin-top:54px">
+<div class="detail-head reveal">
+<div><div class="number">MY PROCESS</div></div>
+<div><h2>Designing for public understanding</h2><p class="detail-lede">I treated the Transparency Portal as an information-clarity problem, not only a dashboard problem. The process connected audience needs, recovery terminology, content hierarchy, visual trust, and data interaction into one public experience.</p></div>
+</div>
+<div class="content-grid">
+<section class="content-card dark reveal"><h3>1 · Understand</h3><p>I began with the questions different audiences bring: Where is the money going? What is happening near me? Which agency or program is responsible? What stage is a project in?</p></section>
+<section class="content-card accent reveal"><h3>2 · Structure</h3><p>I organized disasters, programs, finances, contracts, documents, and project details around those public tasks—using plain-language pathways before exposing deeper data.</p></section>
+<section class="content-card reveal"><h3>3 · Make data legible</h3><p>I translated funding totals, disbursement trends, project stages, maps, and agency relationships into consistent visual patterns with context, labels, and drill-down paths.</p></section>
+<section class="content-card reveal"><h3>4 · Prototype and validate</h3><p>I used wireframes and clickable flows to test navigation, filtering, terminology, and comprehension, then refined the interface in collaboration with delivery teams.</p></section>
+<section class="content-card wide reveal"><h3>5 · Design for change</h3><p>Because recovery information evolves, the solution included reusable content patterns and a tailored CMS. The design could expand to new disasters, programs, documents, and reporting needs without rebuilding the experience from scratch.</p></section>
+</div>
+<figure class="feature-image reveal strategy-visual" style="margin-top:22px"><img alt="Transparency Portal product strategy connecting public questions, information structure, decision tools, and trust" src="assets/cor3-strategy.svg"/><figcaption>The product strategy connects real public questions to an information model, useful decision tools, and trustworthy evidence.</figcaption></figure>
+</section><section class="case-module" id="cor3-discovery">
+<div class="module-heading reveal"><div class="module-kicker">DISCOVERY &amp; DEFINITION</div><h3>Preventing design guesswork</h3><p>Product direction came from connecting stakeholder evidence, observed behavior, and patterns from comparable civic platforms.</p></div>
+<div class="research-grid">
+<article class="research-card reveal"><span>01</span><h4>Stakeholder interviews</h4><p>Surface policy, operational, and public-information constraints.</p></article>
+<article class="research-card reveal"><span>02</span><h4>Field observation</h4><p>Understand how recovery teams find, interpret, and act on information.</p></article>
+<article class="research-card reveal"><span>03</span><h4>Comparative review</h4><p>Benchmark civic-data patterns for transparency and comprehension.</p></article>
+</div>
+<div class="module-heading reveal compact-heading"><div class="module-kicker">CUSTOMER JOURNEY</div><h3>Customer journey mapping</h3><p>The map connects each customer question to a specific friction point and product response.</p></div>
+<div aria-label="Transparency Portal customer journey" class="journey-track reveal">
+<div><b>01</b><strong>Awareness</strong><span>Hear about recovery activity</span></div>
+<div><b>02</b><strong>Arrival</strong><span>Confirm the source is official</span></div>
+<div><b>03</b><strong>Explore</strong><span>Filter funds and programs</span></div>
+<div><b>04</b><strong>Deep dive</strong><span>Inspect projects and documents</span></div>
+<div><b>05</b><strong>Act</strong><span>Download, share, or report</span></div>
+<div><b>06</b><strong>Return</strong><span>Follow new recovery updates</span></div>
+</div><div aria-label="Customer journey decisions" class="journey-matrix reveal">
+<div class="journey-row journey-labels"><span>Moment</span><span>Customer question</span><span>Friction</span><span>Product response</span></div>
+<div class="journey-row"><strong>Arrival</strong><p>“Can I trust this source?”</p><p>Official information can feel dense and fragmented.</p><p>Clear authority cues and a plain-language portal introduction.</p></div>
+<div class="journey-row"><strong>Explore</strong><p>“What applies to my community?”</p><p>Large financial datasets are difficult to interpret.</p><p>Guided filters by place, disaster, program, and agency.</p></div>
+<div class="journey-row"><strong>Verify</strong><p>“What evidence supports this?”</p><p>Documents and technical terms interrupt understanding.</p><p>Progressive detail, concise summaries, and visible sources.</p></div>
+<div class="journey-row"><strong>Act</strong><p>“What can I do next?”</p><p>Download, reporting, and follow-up paths may be unclear.</p><p>Explicit actions for exporting, sharing, reporting, and returning.</p></div>
+</div>
+<div class="journey-insight reveal"><span>Key product opportunity</span><p>Move people from a broad public question to plain-language context, then progressively reveal the detailed evidence needed to verify it.</p></div>
+<div class="module-heading reveal compact-heading"><div class="module-kicker">ILLUSTRATIVE PERSONAS</div><h3>Two different definitions of “useful”</h3><p>These audience models translate the project framing into design priorities. They are portfolio artifacts—not claims about named research participants.</p></div>
+<div class="persona-grid">
+<article class="persona-card reveal"><img alt="Illustrative portrait for the concerned resident persona" src="assets/persona-resident.webp"/><div><span>CONCERNED RESIDENT</span><h4>Reliable updates, without agency jargon</h4><p><b>Needs:</b> infrastructure status, trusted emergency information, and local recovery context.</p><p><b>Design implication:</b> clear source cues, place-based navigation, and plain-language summaries.</p></div></article>
+<article class="persona-card reveal"><img alt="Illustrative portrait for the small-business owner persona" src="assets/persona-business.webp"/><div><span>SMALL-BUSINESS OWNER</span><h4>A direct path to recovery resources</h4><p><b>Needs:</b> grants, eligibility guidance, application steps, and relevant program updates.</p><p><b>Design implication:</b> task-led navigation, guided filters, and visible next actions.</p></div></article>
+</div>
+</section>
+<div class="content-grid">
+<section class="content-card dark reveal"><h3>The challenge</h3><p>After Hurricanes Irma and María, Puerto Rico faced a long, expensive recovery across damaged power, water, communications, and basic services. Public trust depended on making government-led recovery activity transparent, understandable, and accessible.</p></section>
+<section class="content-card accent reveal"><h3>The solution</h3><p>The redesigned portal brought together financial data and descriptive content so the public could understand how funds were obligated and disbursed, how projects moved through recovery, and where to find procurement and accountability information.</p></section>
+<section class="content-card reveal"><h3>Experience pillars</h3><ul><li>Educational explanations of recovery programs.</li><li>Interactive infographics for complex processes.</li><li>Visibility into RFPs, contracts, and procurement.</li><li>Direct access to report fraud, waste, or abuse.</li></ul></section>
+<section class="content-card reveal"><h3>Responsive public access</h3><p>The experience was designed for desktop, tablet, and mobile and supported major browsers. Flexible tables, custom visualizations, an island-wide financial map, and project-stage diagrams made recovery information easier to explore.</p></section>
+</div><figure class="feature-image reveal compact-visual" data-asset="cor3-illustrations" style="margin-top:22px"><img alt="Illustration cards for Road to Recovery, FAASt project execution, HMGP resilience projects, and Hurricane Fiona recovery" src="assets/cor3-illustrations.webp"/><figcaption>A consistent illustration language differentiates major recovery pathways while keeping the portal approachable and scannable.</figcaption></figure>
+<div class="cor3-evidence-grid">
+<div class="evidence-column left-evidence"><figure class="reveal dashboard-visual"><img alt="Disbursement overview with obligations, quarterly comparison, average and trend" src="assets/cor3-dashboard.webp"/><figcaption>Financial storytelling connects obligations, disbursements, period comparison, and long-term trend.</figcaption></figure><figure class="reveal contextual-visual"><img alt="Map of Puerto Rico municipalities affected by the 2019–2020 earthquakes" src="assets/cor3-earthquake-map.webp"/><figcaption>Geographic storytelling makes disaster declarations and assistance coverage easier to understand at a glance.</figcaption></figure><figure class="reveal contextual-visual tp-project-map-visual"><img alt="Transparency Portal interactive Puerto Rico recovery project map with filters and project detail panel" src="assets/cor3-project-map.webp"/><figcaption><b>Project-level exploration.</b> The interactive map connects island-wide recovery activity with filters and a detailed project panel, helping people move from geographic overview to status, phase, funding, and applicant information.</figcaption></figure></div>
+<div class="evidence-column right-evidence"><figure class="reveal"><img alt="Accelerated project execution financial and project-stage dashboard" src="assets/cor3-accelerated.webp"/><figcaption>Accelerated-project reporting combines agency totals, project hierarchy, and execution stages.</figcaption></figure><figure class="reveal contextual-visual"><img alt="Visual timeline explaining Hurricane Fiona response milestones" src="assets/cor3-fiona-timeline.webp"/><figcaption>Editorial timelines connect major recovery events, policy milestones, and public-assistance context.</figcaption></figure></div>
+</div>
+<div class="content-grid" style="margin-top:22px">
+<section class="content-card wide reveal"><h3>A content system built for continuous recovery</h3><p>The tailored content management system allowed teams to create, edit, and publish pages, images, and video without specialized technical knowledge. It included a searchable document library, reusable content cards, FAQs, interactive flow diagrams, newsroom publishing, and a public glossary.</p></section>
+</div>
+<div class="image-pair">
+</div>
+<div class="content-grid" style="margin-top:22px">
+<section class="content-card dark reveal"><h3>Documented scale</h3><p>According to the supplied case study, since the 2018 launch the number of non-FEMA Federal Recovery Fund metrics increased by 175%, while FEMA Recovery Fund metrics increased by 325%.</p></section>
+<section class="content-card accent reveal"><h3>Broader recovery scope</h3><p>The portal later expanded beyond Hurricanes Irma and María to include content and data related to earthquakes, the coronavirus pandemic, and Hurricane Fiona—making the content architecture’s adaptability part of the product value.</p></section>
+<section class="content-card wide reveal"><h3>Outcome narrative</h3><p>The case study attributes four broader benefits to the platform: increased transparency into public spending, better-informed public decision-making, enhanced accountability through visibility, and more streamlined recovery and procurement processes. These are presented as documented case-study outcomes rather than independently audited causal findings.</p></section>
+</div>
+</article>
+<article class="project-detail shell" id="prdrs"><div class="detail-head reveal"><div><div class="number">CASE 02</div><dl class="role-box"><div><dt>Focus</dt><dd>Enterprise workflow</dd></div><div><dt>Work</dt><dd>Dashboard, navigation, chat, icons</dd></div><div><dt>Context</dt><dd>Product UX concept</dd></div></dl></div><div><h2>Puerto Rico Disaster Recovery System</h2><p class="detail-lede">A coherent operating layer for a complex recovery platform—helping power users orient, navigate, understand, and act without losing context.</p></div></div><figure class="feature-image reveal strategy-visual" data-asset="prdrs-strategy"><img alt="Disaster Recovery System product architecture connecting dashboard, navigation, assistant, modules, and icon language" src="assets/prdrs-strategy.svg"/><figcaption>The platform strategy creates one coherent system across multiple high-stakes recovery workflows.</figcaption></figure>
+<figure class="feature-image reveal dashboard-visual"><img alt="Dashboard landing page with announcements, filters, reporting and progress widgets" src="assets/prdrs-dashboard.webp"/></figure>
+<div class="content-grid"><section class="content-card dark reveal"><h3>Dashboard as command center</h3><p>Announcements, personal lists, recent records, global filters, progress widgets, and reporting shortcuts create a sequence from orientation to action—not a random collection of cards.</p></section><section class="content-card accent reveal"><h3>Mega menu as mental model</h3><p>Grouped navigation makes grants, finance, reporting, portals, management, and support legible as one product suite. The menu teaches the system’s structure while respecting roles and permissions.</p></section><section class="content-card reveal"><h3>DRS Assistant</h3><p>Conversational help stays inside the workflow. It can explain terminology, navigate to the right module, summarize visible information, and guide next steps while preserving source and permission boundaries.</p></section><section class="content-card reveal"><h3>Visual language</h3><p>Feature illustrations support orientation; functional icons support repeated interaction. Both reinforce explicit labels, consistent metaphors, accessible names, and stable category colors.</p></section></div><figure class="feature-image reveal compact-visual" data-asset="prdrs-illustrations" style="margin-top:22px"><img alt="Disaster Recovery System illustration library for debris removal, project worksheets, collaboration, grants, formulation, invoicing, PMO, time tracking, and navigation" src="assets/prdrs-illustrations.webp"/><figcaption>A distinct but cohesive illustration system helps people recognize modules quickly across a large, multi-workflow recovery platform.</figcaption></figure>
+<div class="visual-stack">
+<figure class="reveal compact-visual"><img alt="Complete annotated DRS Assistant interface showing conversation, download, new-topic, minimize, response, history, microphone, input, character-count, and submit controls" src="assets/prdrs-chatbot.webp"/><figcaption>The full interaction model defines the assistant’s controls, response actions, history, input behavior, and conversational states.</figcaption></figure>
+</div>
+</article>
+<article class="project-detail shell" id="green"><div class="detail-head reveal"><div><div class="number">CASE 03</div><dl class="role-box"><div><dt>Focus</dt><dd>Consumer wellness</dd></div><div><dt>Work</dt><dd>Concept, brand, strategy, app</dd></div><div><dt>Context</dt><dd>End-to-end concept</dd></div></dl></div><div><h2>Green Platter</h2><p class="detail-lede">A connected concept, brand, product strategy, and execution system centered on one behavioral goal: making healthier eating easier to sustain.</p></div></div>
+<figure class="feature-image reveal strategy-visual" data-asset="green-strategy"><img alt="Green Platter strategy from positioning through identity, product, and campaign" src="assets/green-strategy.svg"/><figcaption>A single product promise guides the identity, experience, and campaign system.</figcaption></figure><figure class="feature-image reveal compact-merch"><img alt="Green Platter identity applied to packaging, tags, notebook, and sign" src="assets/green-concept.webp"/></figure><div class="content-grid"><section class="content-card dark reveal"><h3>The opportunity</h3><p>Healthy intent breaks down under time, budget, knowledge, variety, and consistency constraints. The product was conceived as a lightweight decision system—not only a delivery interface.</p></section><section class="content-card accent reveal"><h3>The proposition</h3><p>Personalized, nutritious meals made convenient enough to become part of everyday life, supported by transparent information and flexible control.</p></section><section class="content-card reveal"><h3>Brand strategy</h3><p>The GP monogram and sprout metaphor communicate growth, freshness, and food. Deep green adds trust; yellow-green brings energy; food imagery proves appetite and variety.</p></section><section class="content-card reveal"><h3>Product strategy</h3><p>Relevance, transparency, convenience, enjoyment, and adaptation form the value pillars. Advanced personalization waits until the core loop—good meals, clear information, reliable delivery, easy repeat ordering—proves itself.</p></section></div><div class="image-pair single-visual">
+<figure class="reveal"><img alt="Green Platter logo concept combining GP letterforms with a sprouting plant" src="assets/green-logo-concept.webp"/><figcaption>The mark combines the GP initials with the visual language of growth and fresh ingredients.</figcaption></figure>
+</div><div class="image-pair" style="margin-top:22px">
+<figure class="reveal"><img alt="Three Green Platter Instagram campaign concepts using fresh ingredients" src="assets/green-social-grid.webp"/><figcaption>A repeatable social system turns ingredients into playful visual messages.</figcaption></figure>
+<figure class="reveal"><img alt="Green Platter social campaign displayed on mobile devices" src="assets/green-social-mobile.webp"/><figcaption>Campaign executions reinforce the fresh, healthy positioning in a mobile-first context.</figcaption></figure>
+</div><section class="case-module gp-system" id="green-strategy-system">
+<div class="module-heading reveal"><div class="module-kicker">PRODUCT STRATEGY SYSTEM</div><h3>Designing for healthier choices without added overhead</h3><p>The concept reframes nutrition as a support system: reduce planning effort, make recommendations relevant, and build motivation into the experience.</p></div>
+<div class="gp-friction reveal">
+<div class="gp-friction-head"><span>Customer friction</span><span>Product implication</span><span>Strategic response</span></div>
+<div><strong>Meal planning takes too much time</strong><p>Healthy intent breaks down when every meal requires research and calculation.</p><b>Automated, goal-aware planning</b></div>
+<div><strong>Preparation feels complex</strong><p>Too many decisions create choice fatigue before the customer even orders.</p><b>Curated choices and scheduled delivery</b></div>
+<div><strong>Nutrition tracking adds cognitive load</strong><p>Manual logging can make healthy behavior feel like administrative work.</p><b>Visible nutrition with passive progress cues</b></div>
+</div>
+<div class="module-heading reveal compact-heading"><div class="module-kicker">BEHAVIORAL MATCHING</div><h3>From stated intent to a useful daily plan</h3></div>
+<div aria-label="Green Platter behavioral matching flow" class="gp-system-flow reveal">
+<div><span>01</span><strong>Goals</strong><p>Health objective and desired routine</p></div>
+<i>→</i>
+<div><span>02</span><strong>Constraints</strong><p>Diet, schedule, preferences, and exclusions</p></div>
+<i>→</i>
+<div><span>03</span><strong>Matching</strong><p>Relevant meals and balanced recommendations</p></div>
+<i>→</i>
+<div><span>04</span><strong>Daily plan</strong><p>A clear, actionable meal schedule</p></div>
+</div>
+<div class="module-heading reveal compact-heading"><div class="module-kicker">MOTIVATION ARCHITECTURE</div><h3>Value first, motivation second</h3><p>Progress mechanics support the core job rather than becoming a separate rewards layer.</p></div>
+<div class="gp-layer-grid">
+<article class="reveal"><span>UTILITY</span><h4>Make the next choice easier</h4><p>Recommendations, nutrition context, and delivery planning reduce effort.</p></article>
+<article class="reveal"><span>PROGRESS</span><h4>Make consistency visible</h4><p>Streaks and milestone cues can reinforce habits without judgment.</p></article>
+<article class="reveal"><span>COMMUNITY</span><h4>Make support optional</h4><p>Peer ideas, reviews, and shared milestones create social encouragement.</p></article>
+<article class="reveal"><span>BRAND</span><h4>Keep the promise coherent</h4><p>The identity, packaging, product, and campaign all communicate fresh simplicity.</p></article>
+</div>
+<div class="evidence-note reveal"><span>EVIDENCE BOUNDARY</span><p>The screens supplied describe a strategic product concept. Adoption, retention, time-saved, and testimonial claims should only be published when supported by source data.</p></div>
+</section><section class="case-module green-flow" id="green-product-flow">
+<div class="module-heading reveal"><div class="module-kicker">PRODUCT EXPERIENCE</div><h3>Turning the brand promise into a repeatable habit</h3><p>The product flow reduces effort while keeping nutrition, preference, and progress visible.</p></div>
+<div aria-label="Green Platter product journey" class="product-flow reveal">
+<div><b>01</b><strong>Discover</strong><span>Browse meals</span></div>
+<div><b>02</b><strong>Personalize</strong><span>Set goals and preferences</span></div>
+<div><b>03</b><strong>Choose</strong><span>Compare nutrition</span></div>
+<div><b>04</b><strong>Schedule</strong><span>Manage delivery</span></div>
+<div><b>05</b><strong>Progress</strong><span>Track and return</span></div>
+</div>
+</section><section class="case-module gp-app-experience" id="gp-app-experience">
+<div class="module-heading reveal"><div class="module-kicker">HIGH-FIDELITY PRODUCT EXPERIENCE</div><h3>From onboarding to sustained progress</h3><p>The interface translates the strategy into a connected journey across goal configuration, daily planning, nutrition, delivery, and milestones.</p></div>
+<div class="gp-app-main">
+<figure class="reveal"><img alt="Green Platter light-theme screens for onboarding, goal configuration, dashboard, and meal planning" src="assets/gp-core-light.webp"/><figcaption><b>Core journey:</b> onboarding, health-goal configuration, daily dashboard, and meal planning.</figcaption></figure>
+<figure class="reveal"><img alt="Green Platter light-theme screens for meal details, nutrition, delivery, and achievements" src="assets/gp-depth-light.webp"/><figcaption><b>Product depth:</b> meal detail, macro dashboard, delivery schedule, and progress milestones.</figcaption></figure>
+</div>
+<div class="module-heading reveal compact-heading"><div class="module-kicker">VISUAL-SYSTEM EXPLORATION</div><h3>Testing the same product architecture across themes</h3><p>Dark-theme studies demonstrate that hierarchy, state, and interaction patterns remain consistent when the visual expression changes.</p></div>
+<div class="gp-theme-pair">
+<figure class="reveal"><img alt="Green Platter dark-theme onboarding, profile, dashboard, and meal-plan screens" src="assets/gp-core-dark.webp"/><figcaption>Dark-theme core journey.</figcaption></figure>
+<figure class="reveal"><img alt="Green Platter dark-theme meal detail, nutrition, delivery, and achievement screens" src="assets/gp-depth-dark.webp"/><figcaption>Dark-theme product depth.</figcaption></figure>
+</div>
+<p class="concept-disclaimer reveal">These are high-fidelity product-concept screens. Names, meals, streaks, nutrition values, and progress metrics shown in the interfaces are illustrative.</p>
+</section></article>
+<section aria-hidden="true" class="section visual-archive" id="archive"><div class="archive-page-intro shell" id="branding-visual-design"><div class="archive-page-bar"><a href="#research-design-strategy">← Back to portfolio</a><span>Aneesha Watve · Branding &amp; Visual Design</span></div><div class="archive-page-heading"><div><div class="eyebrow">SELECTED BRAND &amp; VISUAL COMMUNICATION</div><h1>Branding &amp;<br/>Visual Design</h1></div><p>A focused collection of identity, packaging, campaign, and product-concept work—presented separately from the primary product-strategy case studies.</p></div><nav aria-label="Visual project index" class="archive-project-index"><a data-archive-target="archive-bee-start" href="#branding-visual-design">01 · Bee Organic</a><a data-archive-target="photowiz-archive" href="#branding-visual-design">02 · Photowiz</a><a data-archive-target="fru2go-archive" href="#branding-visual-design">03 · Fru2go</a><a data-archive-target="me-toys-archive" href="#branding-visual-design">04 · ME Toys</a></nav></div><div class="shell">
+<header class="archive-header reveal" id="archive-bee-start"><div><div class="eyebrow">Branding &amp; visual design · 01</div><h2>Bee Organic</h2><p class="archive-lede">A premium raw-honey identity translated across packaging, product photography, and a two-pillar social content system.</p></div><dl class="archive-meta"><div><dt>Client</dt><dd>Bee Organic</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Role</dt><dd>Strategy · Branding · Content Design</dd></div></dl></header>
+<div class="archive-story reveal"><div><div class="module-kicker">STRATEGIC DIRECTION</div><h3>Natural purity, expressed with warmth and precision.</h3></div><p>I spearheaded the campaign strategy, visual identity, and social content design to position Bee Organic as a premium, authentic provider of raw honey. The system balances an earthy product story with a warm, high-end digital presence.</p></div>
+<div class="bee-identity-grid">
+<figure class="reveal bee-tall"><img alt="Bee Organic vintage-inspired line-art logo system" src="assets/bee/bo2.webp"/><figcaption><b>Logo system.</b> A vintage-inspired bee badge combines botanical details and honeycomb motifs in charcoal and golden-yellow colorways.</figcaption></figure>
+<figure class="reveal bee-tall"><img alt="Bee Organic raw honey jar packaging and product photography" src="assets/bee/bo1.webp"/><figcaption><b>Packaging strategy.</b> Transparent, minimal labels let the honey’s natural color lead, supported by marble, wood, and spring florals.</figcaption></figure>
+</div>
+<div class="archive-series reveal"><div class="series-copy"><div class="module-kicker">CONTENT PILLAR 01</div><h3>“Unapologetically Delicious”</h3><p>A golden-hour social series designed to create appetite and demonstrate everyday utility through recognizable food pairings and morning rituals.</p></div>
+<div class="bee-ad-grid"><figure><img alt="Bee Organic honey and pancakes social advertisement" src="assets/bee/bo2a.webp"/><figcaption>Pure raw, liquid gold.</figcaption></figure><figure><img alt="Bee Organic honey and lemon tea social advertisement" src="assets/bee/bo2b.webp"/><figcaption>Mornings, made golden.</figcaption></figure><figure><img alt="Bee Organic honey and toast social advertisement" src="assets/bee/bo2c.webp"/><figcaption>Start slow, pour sweet.</figcaption></figure></div></div>
+<div class="archive-series reveal source-series"><div class="series-copy"><div class="module-kicker">CONTENT PILLAR 02</div><h3>Source &amp; Purity</h3><p>Macro photography of bees and their habitat shifts the story from appetite to provenance—reinforcing trust, natural origin, and the product’s organic character.</p></div>
+<div class="bee-ad-grid"><figure><img alt="Bee Organic source and purity campaign featuring a bee in its natural habitat" src="assets/bee/bo3a.webp"/><figcaption>The source becomes the story.</figcaption></figure><figure><img alt="Bee Organic macro bee photography for social media" src="assets/bee/bo3b.webp"/><figcaption>Macro detail builds authenticity.</figcaption></figure><figure><img alt="Bee Organic nature-led raw honey social content" src="assets/bee/bo3c.webp"/><figcaption>Purity, provenance, and craft.</figcaption></figure></div></div>
+<article class="archive-project photowiz-project" id="photowiz-archive">
+<header class="archive-header reveal"><div><div class="eyebrow">Branding &amp; visual design · 02</div><h2>Photowiz</h2><p class="archive-lede">A typographic identity that positions LenzPro Photowiz as the comprehensive, go-to solution for photography services—from digital interfaces to physical collateral.</p></div><dl class="archive-meta"><div><dt>Client</dt><dd>LenzPro Photowiz</dd></div><div><dt>Focus</dt><dd>Brand Identity · Typography</dd></div><div><dt>Role</dt><dd>Concept · Visual System · Applications</dd></div></dl></header>
+<div class="archive-story reveal"><div><div class="module-kicker">BRAND IDEA</div><h3>A complete photography solution, built into the wordmark.</h3></div><p>The core identity integrates the idea of “A to Z” directly into its typography. Stacked forms—PHO, TO, and WIZ—create a clear, memorable structure, while the “for anything in photobiz” tagline reinforces the brand’s all-encompassing promise.</p></div>
+<div class="photowiz-principles reveal"><div><span>01</span><h4>Conceptual typography</h4><p>The A-to-Z idea is embedded in the mark rather than added as an explanation.</p></div><div><span>02</span><h4>High-contrast palette</h4><p>Deep red and charcoal retain impact across white and black environments.</p></div><div><span>03</span><h4>Scalable system</h4><p>A disciplined structure carries from mobile screens to billboards and cards.</p></div></div>
+<figure class="photowiz-figure reveal"><img alt="Photowiz identity shown on light and dark mobile screens" src="assets/photowiz/digital.webp"/><figcaption><b>Digital interfaces.</b> The minimalist mark remains distinctive across light and dark screen environments.</figcaption></figure>
+<figure class="photowiz-figure reveal"><img alt="Photowiz logo applied to a street billboard and business card" src="assets/photowiz/collateral.webp"/><figcaption><b>Physical collateral.</b> The identity scales from large-format street communication to restrained professional stationery.</figcaption></figure>
+</article><article class="archive-project fru2go-project" id="fru2go-archive">
+<header class="archive-header reveal"><div><div class="eyebrow">Branding &amp; visual design · 03</div><h2>Jain Farms — Fru2go</h2><p class="archive-lede">A research-led identity and packaging redesign that gives an organic fruit-pulp range a more distinctive, fresh, and approachable presence.</p></div><dl class="archive-meta"><div><dt>Client</dt><dd>Jain Farms</dd></div><div><dt>Studio</dt><dd>Ticket Design</dd></div><div><dt>Role</dt><dd>Research · Branding · Packaging · Mascot Naming &amp; Design</dd></div></dl></header>
+<div class="archive-story reveal"><div><div class="module-kicker">THE CHALLENGE</div><h3>Make natural ingredients and freshness visible at a glance.</h3></div><p>The existing visual identity and packaging did not clearly communicate the product’s natural character, freshness, or authenticity. Limited differentiation across the range also made it harder for the brand to build a memorable shelf presence and earn customer trust.</p></div>
+<div aria-label="Fru2go design process" class="fru2go-process reveal"><div><span>01</span><b>User research</b></div><i>→</i><div><span>02</span><b>Market &amp; competitor research</b></div><i>→</i><div><span>03</span><b>Brand direction</b></div><i>→</i><div><span>04</span><b>Packaging system</b></div><i>→</i><div><span>05</span><b>Mascot name &amp; design</b></div></div>
+<div class="fru2go-solution reveal"><div><div class="module-kicker">DESIGN RESPONSE</div><h3>One expressive system, three strategic jobs.</h3></div><div class="fru2go-pillars"><div><span>01</span><h4>Differentiation</h4><p>A recognizable identity creates a distinct character within the organic fruit-pulp category.</p></div><div><span>02</span><h4>Freshness</h4><p>Fruit-led color coding and imagery make the range feel immediate, vibrant, and easy to navigate.</p></div><div><span>03</span><h4>Consistency</h4><p>A unified visual language connects every flavor, pack, and character touchpoint.</p></div></div></div>
+<figure class="fru2go-figure reveal"><img alt="Fru2go fruit pulp packaging range for Jain Farms" src="assets/fru2go/packaging.webp"/><figcaption><b>Packaging system.</b> A flexible pouch family uses strong fruit colors, clear flavor differentiation, and a consistent mascot-led architecture across the range.</figcaption></figure>
+<div class="fru2go-mascot-story reveal"><div><div class="module-kicker">MASCOT STRATEGY</div><h3>Frutosaurus: a friendly bridge between fruit and families.</h3><p>I worked on both the mascot name and design. The development process combined user, buyer, market, and competitor research with exploratory sketches, clay studies, and a flexible final character system.</p></div><figure class="fru2go-figure"><img alt="Frutosaurus mascot naming, research, sketches, clay prototypes and final character designs" src="assets/fru2go/mascot-development.webp"/><figcaption><b>Character development.</b> From early concepts and physical studies to an expressive digital mascot family designed for packaging and communication.</figcaption></figure></div>
+</article><article class="archive-project me-toys-project" id="me-toys-archive">
+<header class="archive-header reveal"><div><div class="eyebrow">Branding &amp; visual design · 04</div><h2>ME Toys</h2><p class="archive-lede">A brand and product-concept system built around active participation—children assemble, narrate, construct, and transform each idea through play.</p></div><dl class="archive-meta"><div><dt>Brand</dt><dd>ME Toys</dd></div><div><dt>Scope</dt><dd>Branding · Packaging · Product Concepts</dd></div><div><dt>Role</dt><dd>Concept · User, Market &amp; Competitor Research · Strategy · Design</dd></div></dl></header>
+<div class="archive-story reveal"><div><div class="module-kicker">THE MASTER IDEA</div><h3>Move play from consumption to creation.</h3></div><p>The ME Toys system treats the child as an active maker rather than a passive user. Its toy-truck master mark communicates movement, modularity, and discovery, while each product line turns a distinct behavior—storytelling, building, or imaginative making—into the center of the experience.</p></div>
+<div class="me-research reveal"><div class="module-kicker">RESEARCH FRAMEWORK</div><div class="me-research-grid"><div><span>01</span><h4>User research</h4><p>Explore how children understand instructions, sequence stories, assemble parts, and stay engaged—alongside the priorities of parents and caregivers.</p></div><div><span>02</span><h4>Market research</h4><p>Map opportunities across educational play, creative construction, storytelling, and environmentally conscious toy categories.</p></div><div><span>03</span><h4>Competitor research</h4><p>Compare play patterns, age positioning, packaging communication, assembly complexity, durability, and distinctiveness at shelf.</p></div></div></div>
+<div class="me-strategy reveal"><div><div class="module-kicker">STRATEGIC DIRECTION</div><h3>Four principles connect the portfolio.</h3></div><ol><li><span>01</span><div><b>Child as co-creator</b><p>Every concept asks the child to make, arrange, narrate, or assemble.</p></div></li><li><span>02</span><div><b>Learning through action</b><p>Story sequencing, spatial reasoning, and construction are embedded in play.</p></div></li><li><span>03</span><div><b>Identity reveals function</b><p>Each logo visually encodes its product idea—from truck to chair to animal.</p></div></li><li><span>04</span><div><b>Material intelligence</b><p>Cardboard becomes both a structural medium and a creative constraint.</p></div></li></ol></div>
+<section class="me-product reveal"><div class="me-product-copy"><span class="me-number">01</span><div class="module-kicker">STORY SYSTEM</div><h3>Li’l Storyteller</h3><p>A 12-piece jigsaw series in which every added piece advances the story. “Create and Narrate” makes sequencing, interpretation, and imagination part of the same play loop.</p><div class="me-loop"><span>Choose</span><i>→</i><span>Connect</span><i>→</i><span>Narrate</span><i>→</i><span>Continue</span></div></div><figure><img alt="ME Toys master brand and Li'l Storyteller jigsaw puzzle concept and packaging" src="assets/me-toys/storyteller.webp"/><figcaption><b>Brand and packaging.</b> The truck-shaped ME Toys identity anchors a story-building puzzle system designed as a collectible series.</figcaption></figure></section>
+<section class="me-product reverse reveal"><div class="me-product-copy"><span class="me-number">02</span><div class="module-kicker">BUILD-IT-YOURSELF FURNITURE</div><h3>Li’l Eco Chair</h3><p>A fully functional chair assembled from interlocking cardboard pieces. The concept turns construction into play while producing a useful object engineered to support up to 90 kg.</p><p class="me-logo-note"><b>Logo concept:</b> the chair silhouette is built directly into the typography, making product function part of the identity.</p></div><figure><img alt="Li'l Eco Chair flat-pack cardboard furniture concept and typographic logo" src="assets/me-toys/eco-chair.webp"/><figcaption><b>Product and identity.</b> Flat pieces become a three-dimensional chair; the same transformation is echoed in the wordmark.</figcaption></figure></section>
+<section class="me-product reveal"><div class="me-product-copy"><span class="me-number">03</span><div class="module-kicker">PAPER ENGINEERING</div><h3>Econimals</h3><p>A make-your-own animal world constructed from cut and colored cardboard pieces. The system combines simple forms with recognizable silhouettes so children can assemble characters and environments.</p><p class="me-logo-note"><b>Logo concept:</b> letterforms combine to suggest an animal, expressing the same part-to-whole logic as the toys.</p></div><figure><img alt="Econimals cardboard animal construction system and letter-built logo" src="assets/me-toys/econimals.webp"/><figcaption><b>Brand and product language.</b> A family of folded cardboard animals demonstrates how a consistent construction principle can generate an expandable play world.</figcaption></figure></section>
+</article></div></section><section class="section shell" id="approach"><div class="section-head reveal"><h2>How I work</h2><p>I treat interfaces as visible expressions of a deeper system: user intent, information structure, operating constraints, evidence, and brand promise.</p></div><div class="principles"><div class="principle reveal"><b>01 · Frame</b><span>Define the real job, audience, constraints, and evidence boundary.</span></div><div class="principle reveal"><b>02 · Structure</b><span>Build the information model and decision path before polishing screens.</span></div><div class="principle reveal"><b>03 · Express</b><span>Create a coherent interaction and visual language across touchpoints.</span></div><div class="principle reveal"><b>04 · Validate</b><span>Test the riskiest assumptions and separate intent from measured impact.</span></div></div></section>
+<section class="section shell" id="about"><div class="about-profile">
+<div class="about-portrait reveal"><img alt="Aneesha Watve" src="assets/aneesha-profile.webp"/></div>
+<div class="about-story reveal"><div class="eyebrow">About</div><h2>Product strategy, made tangible.</h2><p class="about-lede">I’m a UX and product design professional with 18+ years across digital experience, visual communication, product design, and design leadership.</p><p>My strength is connecting insight to execution—shaping experience vision, defining journeys and interaction models, and translating strategy into prototypes, high-fidelity UI, reusable patterns, and implementation-ready specifications.</p><div class="about-specializations"><span>UX Management</span><span>Product Strategy</span><span>Qualitative Research Architecture</span><span>Strategic Metrics Frameworks</span></div></div>
+</div>
+<div class="education-block reveal">
+<div class="education-title"><div class="eyebrow">Education &amp; certification</div><h3>Learning grounded in strategy and craft.</h3></div>
+<div class="education-list">
+<article><time>2026</time><div><h4>Nielsen Norman Group (NN/g)</h4><p><b>UX Certification · User Experience Design</b></p><p>Advanced specialization in UX Management, Product Strategy, Qualitative Research Architecture, and Strategic Metrics Frameworks.</p></div></article>
+<article><time>2002</time><div><h4>Sir J.J. Institute of Applied Art, Mumbai University</h4><p><b>B.F.A. (Applied Art) · Advertising &amp; Visual Communication</b></p><p>Gold Medalist · 8 Government and State Awards</p></div></article>
+</div>
+</div></section>
+<section class="section shell" id="writing"><div class="blog-header reveal"><div><div class="eyebrow">Writing &amp; perspective</div><h2>Ideas shaped through practice.</h2><p>Reflections on enterprise UX, qualitative research, design leadership, and an evolving product-strategy practice.</p></div><span class="blog-count">4 essays · Read here</span></div>
+<div class="blog-grid">
+<article class="blog-card reveal"><div class="blog-meta"><span>Enterprise UX</span><span>2 min read</span></div><div class="blog-concept-visual"><span>Complexity</span><i>→</i><span>Structure</span><i>→</i><span>Clarity</span></div><h3>Designing for Complexity: Making Enterprise Experiences Feel Simple</h3><p>Why simplicity in enterprise products is not about removing information, but making complex systems understandable without concealing their reality.</p><a aria-label="Read Designing for Complexity on Aneesha Watve's blog" href="#blog-designing-for-complexity">Read article →</a></article>
+<article class="blog-card reveal"><div class="blog-meta"><span>UX Research</span><span>2 min read</span></div><div class="blog-concept-visual"><span>Question</span><i>→</i><span>Evidence</span><i>→</i><span>Decision</span></div><h3>UX Research Starts Before You Talk to a User</h3><p>Meaningful qualitative research begins with the architecture of the study—before interviews, observations, and conversations take place.</p><a aria-label="Read UX Research Starts Before You Talk to a User on Aneesha Watve's blog" href="#blog-research-before-users">Read article →</a></article>
+<article class="blog-card reveal"><div class="blog-meta"><span>Design Leadership</span><span>2 min read</span></div><div class="blog-concept-visual"><span>Perspectives</span><i>→</i><span>Alignment</span><i>→</i><span>Direction</span></div><h3>UX Leadership Is Less About Authority and More About Alignment</h3><p>A perspective on guiding product, engineering, business, compliance, and user priorities toward a shared experience direction.</p><a aria-label="Read UX Leadership Is Less About Authority and More About Alignment on Aneesha Watve's blog" href="#blog-leadership-through-alignment">Read article →</a></article>
+<article class="blog-card reveal"><div class="blog-meta"><span>Career Reflection</span><span>4 min read</span></div><div class="blog-concept-visual"><span>Experience</span><i>→</i><span>Frameworks</span><i>→</i><span>Intentional practice</span></div><h3>Why I Went Back to the Classroom After 18+ Years in Design</h3><p>A reflection on returning to formal study—not to start over, but to better understand and strengthen years of multidisciplinary design experience.</p><a aria-label="Read Why I Went Back to the Classroom on Aneesha Watve's blog" href="#blog-back-to-the-classroom">Read article →</a></article>
+</div></section><section class="shell section" id="contact"><div class="contact reveal"><div><div class="eyebrow" style="color:var(--lime)">Let’s work together</div><h2>Have a complex product that needs direction?</h2><p>I’m interested in product strategy, experience architecture, and design-system challenges where clearer structure can change what a team builds and how people use it.</p><a class="btn" href="mailto:aneeshawatve3@gmail.com">aneeshawatve3@gmail.com</a></div><aside>Based in Fremont, CA · Available for product strategy, UX, information architecture, dashboard, and visual-system conversations.</aside></div></section>
+</main>
+<footer class="shell"><span>© 2026 Aneesha Watve</span><span>Designed around clarity, evidence, and systems thinking.</span><a href="#writing">Blog ↗</a></footer>
+<script>
+  const menu=document.querySelector('.menu'),links=document.querySelector('.nav-links');
+  menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'Close':'Menu'});
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu'}));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<div aria-hidden="true" class="native-blog-reader" id="native-blog-reader"><div class="native-blog-nav"><a class="native-blog-brand" href="#writing">Aneesha Watve</a><a class="native-blog-back" href="#writing">← Back to portfolio</a></div><main class="native-blog-stage"><article aria-hidden="true" class="native-blog-page" id="blog-designing-for-complexity"><header class="native-blog-hero"><div class="blog-meta"><span>Enterprise UX</span><span>August 31, 2026 · 2 min read</span></div><h1>Designing for Complexity: Making Enterprise Experiences Feel Simple</h1><p class="native-blog-dek">Simplicity is not the absence of complexity. It is the result of structuring complexity around what a person needs, when they need it.</p><div class="blog-concept-visual article-visual"><span>Complexity</span><i>→</i><span>Structure</span><i>→</i><span>Clarity</span></div><p class="native-blog-byline">By Aneesha Watve</p></header><div class="native-blog-body"><p>“Make it simple” is one of the most common requests designers receive. It is also one of the most misunderstood.</p><p>Simple does not mean removing information until the screen looks clean. In complex enterprise products, simplicity is something much harder: making a complicated system understandable without pretending that the complexity does not exist.</p><p>This has been one of the defining challenges of my enterprise UX work.</p><h2>Complexity has many sources</h2><p>An enterprise workflow may need to accommodate multiple user roles, different permissions, regulatory requirements, legacy processes, exceptions, large datasets, dependencies between teams, technical constraints, and years of accumulated business rules.</p><p>None of that disappears simply because we want a cleaner interface.</p><p>The challenge is therefore not, “How can I make this screen simple?” It is, “How can I help this user deal with only the complexity that matters to them, at the moment it matters?” That is a very different design problem.</p><h2>Start with the user's mental model</h2><p>Organizations tend to describe products according to how the organization is structured. Users rarely think that way.</p><p>A system might internally consist of modules, databases, departments, programs, and approval stages. The user is thinking: “I need to submit this.” “I need to know what happened.” “I need to fix this problem.” “I need to make a decision.”</p><p>One of the designer's most important jobs is translating organizational complexity into a structure aligned with the user's goal. That translation affects navigation, information architecture, terminology, workflow, interaction patterns, and content.</p><h2>Progressive complexity</h2><p>Not every user needs every piece of information at once. This is where progressive disclosure becomes powerful.</p><p>Show what is necessary for the current decision. Make secondary information available when needed. Reveal advanced functionality in context. Provide meaningful defaults. Use hierarchy to distinguish the critical from the merely available.</p><p>The system can remain sophisticated underneath while the user's interaction with it remains understandable. That is not “dumbing down” the product. It is good information architecture.</p><h2>Visual design comes later than structural clarity</h2><p>My foundation is in visual communication, and I continue to care deeply about typography, composition, hierarchy, and aesthetics. But complex products have repeatedly taught me that visual polish cannot rescue structural confusion.</p><p>Before asking whether a screen looks good, I want to know: Does the user understand where they are? Do they know what they can do? Do they know what requires attention? Do they understand what happens next? Can they recover from a mistake? Does the terminology match their mental model?</p><p>Only then does visual design amplify the experience.</p><h2>Simple is an outcome</h2><p>Some of the best interface work is almost invisible. Users do not notice the information architecture. They do not see the interaction model. They do not know that ten edge cases were resolved behind a single workflow. They simply accomplish what they came to do.</p><p>That is why one of my favorite ways to describe the work I do is: Complex → Radically Simple.</p><p>Not because the underlying problem became simple. Because careful research, architecture, interaction design, systems thinking, accessibility, and iteration absorbed enough of the complexity that the user no longer had to.</p><p>And perhaps that is one of the most valuable things good UX can do.</p></div><footer class="native-blog-end"><span>Complexity, translated into product direction.</span><a href="#writing">Back to all writing ↑</a></footer></article><article aria-hidden="true" class="native-blog-page" id="blog-research-before-users"><header class="native-blog-hero"><div class="blog-meta"><span>UX Research</span><span>August 31, 2026 · 2 min read</span></div><h1>UX Research Starts Before You Talk to a User</h1><p class="native-blog-dek">A conversation is not automatically research. Good research begins with the architecture of the study and the decision it must inform.</p><div class="blog-concept-visual article-visual"><span>Question</span><i>→</i><span>Evidence</span><i>→</i><span>Decision</span></div><p class="native-blog-byline">By Aneesha Watve</p></header><div class="native-blog-body"><p>User research sounds straightforward. Talk to users. Observe them. Ask questions. Identify pain points. Translate those insights into design.</p><p>In practice, meaningful qualitative research is much harder.</p><p>One of the most important ideas reinforced through my UX research studies is that good research does not begin with the interview. It begins with the architecture of the research itself.</p><h2>A conversation is not automatically research</h2><p>It is easy to conduct an interesting user interview. It is harder to conduct one that reliably helps a team make a decision.</p><p>Before speaking with a participant, I want to understand: What are we trying to learn? What decision will this research inform? What do we already know? What assumptions are we testing? Who can provide the evidence we need? Which research method fits the question?</p><p>Those decisions shape the quality of everything that follows. Without them, teams can collect pages of observations and still struggle to answer the original product question.</p><h2>Ask about behavior, not just preference</h2><p>There is an important difference between asking people what they like and understanding what they actually do.</p><p>Consider: “Would you use a feature that automatically organizes these items?” versus “Tell me about the last time you needed to organize these items. What did you do?”</p><p>The first invites speculation. The second begins with real behavior. People are usually much better witnesses of their past experiences than predictors of their future behavior.</p><h2>The insight is not the quote</h2><p>Another common mistake is treating memorable user statements as insights. A quote is evidence. An insight requires interpretation.</p><p>Imagine several users saying, “I export this information into Excel.” The superficial conclusion might be: “Users want Excel export.” Perhaps. But deeper investigation might reveal that users export because the product does not let them compare records, perform calculations, share information, or create a required downstream view.</p><p>The real opportunity may have little to do with Excel. Qualitative analysis moves from individual observations to patterns, from patterns to meaning, and from meaning to implications for the product.</p><h2>Research should create decisions, not reports</h2><p>A polished presentation with personas, quotes, photographs, and findings can still have limited impact if nobody knows what to do next.</p><p>I prefer research that answers: What did we learn? How confident are we? Which assumption changed? What should the team reconsider? Which opportunity deserves further exploration? What do we still not know?</p><p>The output might be a report. But the outcome should be a better decision.</p><h2>Research is an architecture</h2><p>I increasingly think of qualitative research as an architecture rather than an activity. The interview is one component. So are participant selection, research questions, methodology, facilitation, analysis, synthesis, bias awareness, communication, and decision-making.</p><p>When those elements reinforce one another, research becomes much more than “talking to users.” It becomes a disciplined way of reducing uncertainty.</p><p>And that is when research begins to influence product strategy rather than merely document user opinion.</p></div><footer class="native-blog-end"><span>Complexity, translated into product direction.</span><a href="#writing">Back to all writing ↑</a></footer></article><article aria-hidden="true" class="native-blog-page" id="blog-leadership-through-alignment"><header class="native-blog-hero"><div class="blog-meta"><span>Design Leadership</span><span>August 30, 2026 · 2 min read</span></div><h1>UX Leadership Is Less About Authority and More About Alignment</h1><p class="native-blog-dek">Some of the most important UX leadership moments happen when nobody on the project reports to you.</p><div class="blog-concept-visual article-visual"><span>Perspectives</span><i>→</i><span>Alignment</span><i>→</i><span>Direction</span></div><p class="native-blog-byline">By Aneesha Watve</p></header><div class="native-blog-body"><p>For a long time, I associated design leadership with managing designers. Today, I see it differently.</p><p>A product manager has one priority. Engineering has another. Business stakeholders focus on deadlines or outcomes. Compliance teams see risks. Users simply want to accomplish what they came to do. Design sits somewhere in the middle.</p><p>One of my biggest takeaways from studying UX management is that UX leadership is often an alignment problem before it is a design problem.</p><h2>Great design rarely fails because someone cannot draw the interface</h2><p>Enterprise design teams generally know how to create wireframes, prototypes, components, and interfaces. The harder problems are usually elsewhere.</p><p>What problem are we actually solving? Which user need should take priority? Which requirement is truly mandatory? Where can we simplify? What tradeoff are we willing to make? Who has the authority to decide?</p><p>Unless those questions are resolved, producing more screens does not necessarily move the product forward. Sometimes it simply makes disagreement more visual.</p><h2>The designer as translator</h2><p>Throughout my career, I have increasingly found myself playing the role of translator—not language translation, but perspective translation.</p><p>A business stakeholder may describe a requirement through a business objective. An engineer may describe the same requirement through system behavior. A compliance team may frame it around risk. A user may describe the resulting problem as, “I don't know what I'm supposed to do next.”</p><p>All four perspectives can be valid. The designer's job is to create a shared understanding of the experience connecting them.</p><p>Journey maps, workflows, prototypes, service blueprints, research findings, and even a well-framed design question can become alignment tools. The artifact is valuable, but the conversation it enables is often even more valuable.</p><h2>Influence is a design skill</h2><p>Presenting a design is not simply explaining why a button is placed somewhere. It means explaining the reasoning behind a product decision: What problem did we observe? What evidence do we have? What alternatives were considered? What tradeoffs are involved? What would success look like?</p><p>Once the conversation moves to that level, design critique becomes less subjective. Instead of “I like option A,” the discussion becomes, “Option A better supports the workflow we agreed is most important.” That shift matters.</p><h2>Leadership can happen without the title</h2><p>I have seen this outside professional product teams as well. While coordinating a volunteer educational program, I worked with board members, teachers, parents, students, and volunteers who often had very different priorities.</p><p>There was no organizational hierarchy that could solve every disagreement. Progress depended on communication, structure, shared goals, feedback mechanisms, and trust.</p><p>UX organizations operate in surprisingly similar ways. You cannot mandate genuine alignment. You have to create the conditions for it.</p><h2>My definition of UX leadership today</h2><p>UX leadership is not simply producing the strongest design. It is helping a group of people make better experience decisions together.</p><p>Sometimes that requires research. Sometimes a prototype. Sometimes a framework. Sometimes a difficult conversation. And sometimes the most important contribution a designer can make is not another screen at all.</p><p>It is helping everyone finally see the same problem.</p></div><footer class="native-blog-end"><span>Complexity, translated into product direction.</span><a href="#writing">Back to all writing ↑</a></footer></article><article aria-hidden="true" class="native-blog-page" id="blog-back-to-the-classroom"><header class="native-blog-hero"><div class="blog-meta"><span>Career Reflection</span><span>August 30, 2026 · 4 min read</span></div><h1>Why I Went Back to the Classroom After 18+ Years in Design</h1><p class="native-blog-dek">I did not go back to learn how to design. I went back to understand design—and my own experience—more deeply.</p><div class="blog-concept-visual article-visual"><span>Experience</span><i>→</i><span>Frameworks</span><i>→</i><span>Intentional practice</span></div><p class="native-blog-byline">By Aneesha Watve</p></header><div class="native-blog-body"><p>After more than 18 years in design, I decided to go back to the classroom. Not because I was starting over. Because I wanted to understand my own experience better.</p><p>My career has moved through visual communication, advertising, digital learning, branding, UX, product design, consulting, and complex enterprise platforms. With every transition, my role became less about simply creating something visually effective and more about understanding users, solving complex problems, aligning stakeholders, and helping teams make better product decisions.</p><p>Experience had given me strong instincts—but I wanted stronger frameworks behind those instincts. That led me to complete my UX Certification with Nielsen Norman Group, with advanced learning focused on UX management, product strategy, qualitative research, and UX metrics.</p><h2>Why study UX after already practicing it for years?</h2><p>After working in design for so long, I had already encountered ambiguous requirements, competing priorities, complex workflows, frustrated users, design-system challenges, accessibility considerations, difficult trade-offs, and the tension between user needs, business goals, and technical constraints.</p><p>But experiencing something and having a structured way to reason about it are not always the same thing. I wanted to step away from deadlines and deliverables and examine fundamental questions more deeply.</p><p>How should research be structured so it influences product decisions? How do we move UX conversations beyond individual screens? How should designers collaborate with product and engineering? How do we measure whether an experience improved? And as designers become more senior, how does the role evolve from designing the experience to shaping the conditions in which good experiences get created?</p><h2>Experience gave me patterns. NN/g gave me another lens.</h2><p>One benefit of working in design for many years is pattern recognition. You sense when a workflow is unnecessarily complicated. You recognize when stakeholders describe symptoms instead of the underlying problem. You can anticipate where users may struggle before formal testing.</p><p>That intuition is valuable. But it can become dangerous if we stop questioning it.</p><p>The NN/g certification gave me an opportunity to revisit familiar problems through structured frameworks. The learning helped me articulate why something had worked—or why it had not.</p><p>Once something becomes explicit rather than intuitive, it becomes easier to explain, repeat, teach, challenge, and improve.</p><h2>My questions have changed over the years</h2><p>Early in my career, many questions were about execution: How should this information be presented? What should the visual hierarchy be? How can we communicate the idea more clearly? Those questions still matter deeply.</p><p>Over time, additional questions became equally important: Are we solving the right problem? What evidence tells us it matters? Whose perspective might be missing? What assumptions are we making? What trade-offs are we accepting? How does the experience connect with the wider product ecosystem? How will we know whether the design improved anything?</p><p>That shift—from focusing primarily on the artifact to thinking about the system surrounding it—has been one of the biggest evolutions in my career.</p><h2>Enterprise UX made this especially clear</h2><p>My recent work has involved complex enterprise experiences where design decisions are rarely isolated. A seemingly simple screen may sit at the intersection of customer needs, business processes, regulatory requirements, accessibility standards, engineering constraints, multiple user roles, and legacy systems.</p><p>In those environments, UX cannot be reduced to making an interface easier to use. It requires systems thinking, research, experience architecture, product thinking, design systems, measurement, communication, and alignment between people who see the same problem from very different perspectives.</p><p>My NN/g learning helped me connect many of these pieces more deliberately.</p><h2>Going back to the classroom was also humbling</h2><p>It reminded me how important it is to remain a student. When you have worked in a field for a long time, it is easy to become comfortable with your methods. Formal learning creates an opportunity to question them.</p><p>Some concepts reinforced things I already believed. Others gave me new vocabulary for ideas developed through experience. Some challenged assumptions I had carried for years. I found that refreshing.</p><p>Design keeps changing. Products change. Technology changes. User expectations and organizations change. AI is changing both the products we design and the way designers work.</p><p>Remaining curious is not separate from being an experienced designer. I increasingly believe it is part of the responsibility.</p><h2>I didn't go back to learn how to design</h2><p>I went back to understand design more deeply. My NN/g certification did not replace what 18+ years of practice had taught me. It helped me organize, question, and strengthen it.</p><p>Earlier in my career, I often asked, “How can I design this better?” Today I ask a broader set of questions: Are we solving the right problem? What evidence supports our decision? How does this experience fit into the larger system? How will we know whether it worked? How can I help the entire team make better experience decisions?</p><p>Going back to the classroom was not about adding another credential. It was about becoming more intentional about the designer I want to be in the next chapter of my career.</p></div><footer class="native-blog-end"><span>Complexity, translated into product direction.</span><a href="#writing">Back to all writing ↑</a></footer></article></main></div><script>
+(function(){
+  const reader=document.getElementById('native-blog-reader');
+  const pages=[...reader.querySelectorAll('.native-blog-page')];
+  function syncReader(){
+    const id=location.hash.slice(1);
+    const page=pages.find(p=>p.id===id);
+    pages.forEach(p=>{const on=p===page;p.classList.toggle('is-active',on);p.setAttribute('aria-hidden',String(!on));});
+    const open=!!page;
+    reader.classList.toggle('is-open',open);
+    reader.setAttribute('aria-hidden',String(!open));
+    document.body.classList.toggle('blog-reading',open);
+    if(open){reader.scrollTop=0;document.title=page.querySelector('h1').textContent+' — Aneesha Watve';}
+    else{document.title='Aneesha Watve — Product Strategy & UX Portfolio';}
+  }
+  window.addEventListener('hashchange',syncReader);
+  window.addEventListener('DOMContentLoaded',syncReader);
+  syncReader();
+})();
+</script><script>
+(function(){
+  const archive=document.getElementById('archive');
+  if(!archive)return;
+  function syncVisualProjects(){
+    const open=['#branding-visual-design','#visual-projects'].includes(location.hash);
+    document.body.classList.toggle('visual-projects-open',open);
+    archive.setAttribute('aria-hidden',String(!open));
+    if(open){
+      archive.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+      const pageTop=document.getElementById('branding-visual-design');
+      requestAnimationFrame(()=>{
+        if(pageTop)pageTop.scrollIntoView({block:'start',behavior:'auto'});
+        else window.scrollTo(0,0);
+      });
+      document.title='Branding & Visual Design — Aneesha Watve';
+    }else if(location.hash && !location.hash.startsWith('#blog-')){
+      const target=document.querySelector(location.hash);
+      if(target)setTimeout(()=>target.scrollIntoView({block:'start'}),0);
+    }
+  }
+  archive.querySelectorAll('[data-archive-target]').forEach(link=>{
+    link.addEventListener('click',e=>{
+      e.preventDefault();
+      const target=document.getElementById(link.dataset.archiveTarget);
+      if(location.hash!=='#branding-visual-design')history.pushState(null,'','#branding-visual-design');
+      syncVisualProjects();
+      if(target)setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),20);
+    });
+  });
+  window.addEventListener('hashchange',syncVisualProjects);
+  window.addEventListener('DOMContentLoaded',syncVisualProjects);
+  syncVisualProjects();
+})();
+</script></body>
+</html>
